@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Registraion </title>
+    <!--Link Stylesheet-->
+    <link rel="stylesheet" href="css/pharmacy2.css">
+</head>
+
+<body>
+    <form class="form">
+        <div class="form_Container">
+            <div class="form_img"><img src="Images/Lab-Test/lab-test.jpg"></div>
+            <div class="LabTestform">
+                <label for="Name">
+                    <h1>1. Your Contact Deatils </h1>
+                    <br>
+                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="text" id="name" placeholder="Patient Id if exists">
+                    <br><br>
+                    <input type="text" id="Contact_Number" placeholder="Contact Number">
+                    <input type="text" id="Email_Id" placeholder="Email Id">
+                    <br><br>
+
+                    <h1>2. Address </h1>
+                    <br>
+                    <input type="text" id="House_Number" placeholder="House Number">
+                    <input type="text" id="Street" placeholder="Street">
+                    <br><br>
+                    <input type="text" id="Area" placeholder="Area">
+                    <br><br>
+                    <input list="District_list" id="District" placeholder="District">
+                    <datalist id="District_list">
+                        <option value="District1">
+                        <option value="District2">
+                        <option value="District3">
+                        <option value="District4">
+                    </datalist>
+                    <h1>3.Choose the Test Type </h1>
+                    <div>Check atleast one box without fail</div>
+                    <br>
+                    <input type="checkbox">
+                    <label for="CBC"> CBC</label>
+                    <input type="checkbox">
+                    <label for="Complete_Urine"> Complete Urine</label>
+                    <input type="checkbox">
+                    <label for="Lipid_Profile"> Lipid Profile</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="TSH"> Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="Glucose_Test"> Glucose Test</label>
+                    <br><br>
+
+                    <h1 class="heading4">4.Do you want a hard copy </h1>
+                    <h1 class="heading4"> the report also?</h1>
+                    <br>
+                    <input type="checkbox">
+                    <label for="Yes">Yes</label>
+                    <input type="checkbox">
+                    <label for="NO">No</label>
+                    <br><br>
+
+                    <h1 class="heading4">5.Select Your Comfortable </h1>
+                    <h1 class="heading4"> Date and Time</h1>
+                    <br>
+                    <label for="Date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="Time">Select a time:</label>
+                    <input type="time" id="time" name="time">
+
+
+
+                </label>
+
+            </div>
+        </div>
+    </form>
+    <br><br>
+    <div class="submit_tab">
+        <li><input type="reset" class="button">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+        <li> &nbsp;&nbsp;&nbsp;<input type="submit" class="button" value="Submit"></li>
+    </div>
+
+</body>
+
+</html>

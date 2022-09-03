@@ -1,0 +1,90 @@
+* {
+    /*width setting will include space for border and padding areas*/
+    box-sizing: border-box;
+    margin-left: 3.5px;
+}
+
+main {
+    width: 95%;
+    /*auto->distribute the extra 5% space as left and right margin*/
+    margin: 0 auto;
+}
+
+main section {}
+
+.pharmacy-item {
+    float: left;
+    position: relative;
+    width: 23%;
+    height: auto;
+    margin: 1em 1%;
+    border: 1 px solid black;
+    border-radius: 5px;
+    background-color: rgb(231, 234, 235);
+
+}
+
+.pharmacy-item-image {
+    display: block;
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.pharmacy-item-price {
+
+
+    bottom: 0px;
+    width: 95%;
+    padding: 0.5em;
+    text-align: centre;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    color: blue;
+}
+
+.imagebox {
+
+    height: 130px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.pharmacy-item-offer {
+    color: blue;
+    padding: 5px;
+}
+
+/*when we hover over the pharmacy item , the title within it  shows up*/
+
+.pharmacy-item:hover .pharmacy-item-title {
+    display: block;
+}
+
+.AddToCart {
+
+    background-color: rgb(240, 232, 248);
+    border: none;
+    color: rgb(238, 170, 44);
+    font-weight: bolder;
+    padding: 4px 87px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #365ff5;
+}
+
+.pharmacy-item:hover {
+    transform: scale(1.1);
+}
+
+.AddToCart:focus {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}
